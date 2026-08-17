@@ -18,69 +18,13 @@ from ...config import settings
 from ...db import SceneStore
 from ...jobs import build_prompt
 from ...model_manager import ModelError, manager
+from ...samples import SAMPLES
 from ...server import mcp
 from ...utils import _error_response, ok_response
 
 _READONLY = {"readonly": True}
 _MUTATING = {}
 _DESTRUCTIVE = {"readonly": False, "destructive": True}
-
-_SAMPLE_SCENES: list[dict[str, str]] = [
-    {
-        "id": "comedy-club",
-        "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
-        "asr": "And that is why I never buy cheap luggage anymore!",
-        "speech": "expressive comedic male voice",
-        "sfx": "uproarious crowd laughter",
-        "music": "sudden upbeat jazz band sting",
-        "env": "intimate comedy club",
-    },
-    {
-        "id": "rainy-cafe",
-        "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
-        "asr": "<|unknown|>",
-        "speech": "<|unknown|>",
-        "sfx": "steady rain against glass",
-        "music": "gentle acoustic guitar strumming",
-        "env": "cozy cafe interior",
-    },
-    {
-        "id": "thunderstorm",
-        "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
-        "asr": "<|unknown|>",
-        "speech": "<|unknown|>",
-        "sfx": "distant thunder rumbles and heavy rain",
-        "music": "<|unknown|>",
-        "env": "open field at night",
-    },
-    {
-        "id": "jazz-lounge",
-        "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
-        "asr": "<|unknown|>",
-        "speech": "<|unknown|>",
-        "sfx": "polite applause after the piece",
-        "music": "smooth jazz quartet with saxophone, piano, and upright bass",
-        "env": "smoky lounge with low lights",
-    },
-    {
-        "id": "news-report",
-        "caption": "A calm news anchor reading headlines with subtle studio ambience",
-        "asr": "Breaking news: local markets rallied for a third consecutive day today.",
-        "speech": "calm professional female voice",
-        "sfx": "<|unknown|>",
-        "music": "subtle news bed music",
-        "env": "quiet radio studio",
-    },
-    {
-        "id": "forest-dawn",
-        "caption": "A peaceful forest at dawn with birdsong and a gentle breeze",
-        "asr": "<|unknown|>",
-        "speech": "<|unknown|>",
-        "sfx": "birdsong and rustling leaves",
-        "music": "<|unknown|>",
-        "env": "dense forest at sunrise",
-    },
-]
 
 
 def _store() -> SceneStore:
@@ -194,9 +138,9 @@ async def audio_scene(
 
         if operation == "samples":
             return ok_response(
-                f"Found {len(_SAMPLE_SCENES)} example scenes",
-                samples=_SAMPLE_SCENES,
-                count=len(_SAMPLE_SCENES),
+                f"Found {len(SAMPLES)} example scenes",
+                samples=SAMPLES,
+                count=len(SAMPLES),
             )
 
         if operation == "download_model":

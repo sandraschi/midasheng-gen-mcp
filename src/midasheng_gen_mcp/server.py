@@ -123,8 +123,11 @@ def build_web_app() -> FastAPI:
     from .api.routes import jobs as jobs_routes  # noqa: PLC0415
     from .api.routes import llm as llm_routes  # noqa: PLC0415
     from .api.routes import logs as logs_routes  # noqa: PLC0415
+    from .api.routes import model as model_routes  # noqa: PLC0415
+    from .api.routes import samples as samples_routes  # noqa: PLC0415
     from .api.routes import scenes as scenes_routes  # noqa: PLC0415
     from .api.routes import skills as skills_routes  # noqa: PLC0415
+    from .api.routes import tools as tools_routes  # noqa: PLC0415
 
     for router in (
         health_routes.router,
@@ -133,8 +136,11 @@ def build_web_app() -> FastAPI:
         jobs_routes.router,
         audio_routes.router,
         skills_routes.router,
+        tools_routes.router,
+        samples_routes.router,
         logs_routes.router,
         llm_routes.router,
+        model_routes.router,
         cap_routes.router,
     ):
         web.include_router(router)
