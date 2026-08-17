@@ -38,6 +38,9 @@ class Settings:
 
     hf_model_id: str = os.environ.get("MIDASHENG_HF_MODEL_ID", "mispeech/midashenglm-gen")
     device: str = os.environ.get("MIDASHENG_DEVICE", "auto").strip().lower()
+    # fp32 (default, works) | fp16 (experimental - custom model raises
+    # Float/Half matmul errors under fp16 as of 2026-08-17)
+    dtype: str = os.environ.get("MIDASHENG_DTYPE", "fp32").strip().lower()
     preload_model: bool = os.environ.get("MIDASHENG_PRELOAD_MODEL", "0").strip() in (
         "1",
         "true",

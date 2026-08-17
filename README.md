@@ -75,7 +75,7 @@ Or clone and double-click `start.bat` for the full stack (backend + webapp).
 
 ## Requirements
 
-- Windows/Linux/macOS with a CUDA GPU (RTX 4090 class: ~6 GB VRAM fp16; CPU
+- Windows/Linux/macOS with a CUDA GPU (RTX 4090 class: ~12 GB VRAM (fp32); CPU
   inference works but is slow)
 - Python 3.12+ via [uv](https://docs.astral.sh/uv/), Node.js 20+, bun
   (auto-installed by `start.ps1` on naked PCs)
@@ -85,3 +85,4 @@ Or clone and double-click `start.bat` for the full stack (backend + webapp).
 
 Apache-2.0 (model and this wrapper). See the use-restrictions section in
 the upstream repo: no unlawful/military use, no harm to minors or groups.
+

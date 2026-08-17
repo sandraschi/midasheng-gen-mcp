@@ -6,7 +6,7 @@ stack and the ~6 GB model checkpoint.
 
 ## What you need
 
-- A CUDA GPU (RTX 4090 class recommended; ~6 GB VRAM free). CPU works but
+- A CUDA GPU (RTX 4090 class recommended; ~12 GB VRAM (fp32) free). CPU works but
   generation is 10-50x slower.
 - ~10 GB free disk (checkpoint ~6 GB + torch stack ~3 GB).
 
@@ -65,3 +65,4 @@ audio_scene(operation="generate",
 
 No accounts, no subscriptions, no API keys. The only network traffic is
 the one-time Hugging Face download. Generation is fully local.
+

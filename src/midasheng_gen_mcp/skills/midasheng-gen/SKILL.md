@@ -10,7 +10,7 @@ description: Unified audio scene generation - speech, music, SFX, and ambience i
 MiDashengLM-Gen MCP generates coherent 16 kHz mixed audio scenes from
 text: speech, music, sound effects, and environmental acoustics in a
 single autoregressive pass (LLM backbone + per-token flow matching).
-Apache-2.0, fully local on CUDA (RTX 4090 class: ~6 GB VRAM).
+Apache-2.0, fully local on CUDA (RTX 4090 class: ~12 GB VRAM (fp32)).
 
 ## Tool surface
 
@@ -68,3 +68,4 @@ The model consumes tagged views; absent views become <|unknown|>.
 - Output: 16 kHz mono WAV, variable length via the learned stop head.
 - 9 languages supported by the checkpoint; emotion control via the
   speech view.
+

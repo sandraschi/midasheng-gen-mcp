@@ -13,7 +13,7 @@ Install these if you don't have them already:
 | Git | Clone repo (Option C/D only) | `winget install Git.Git` |
 | Python + uv | Run server (Option C/D only) | `winget install astral-sh.uv` |
 | Node.js | mcpb CLI (Option B only) | `winget install OpenJS.NodeJS` |
-| CUDA GPU | Model inference (RTX 4090 class, ~6 GB VRAM) | NVIDIA driver only |
+| CUDA GPU | Model inference (RTX 4090 class, ~12 GB VRAM (fp32)) | NVIDIA driver only |
 
 > Windows: all installs via [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/)
 > macOS/Linux: use your package manager (brew/apt). CPU inference works but is slow.
@@ -88,3 +88,4 @@ You should see: a generated scene id with duration, and a WAV saved to
 
 See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) for common issues
 (no CUDA, model missing, slow generation, port conflicts).
+

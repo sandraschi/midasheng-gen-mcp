@@ -13,7 +13,7 @@ environmental acoustics in a single autoregressive pass.
   fine-tuned) + per-token conditional flow matching (16-layer DiT, hidden
   2048). Generates 768-dim semantic-acoustic latents (25 Hz) - no
   quantization artifacts. Variable-length output via a learned stop head.
-- **Size**: 2.9B params total (~6 GB fp16 VRAM; runs on RTX 4090 class).
+- **Size**: 2.9B params total (~12 GB fp32 VRAM; runs on RTX 4090 class).
 - **Quality (per paper)**: Seed-TTS English WER 12.15% -> 2.79% vs 1.24%
   for dedicated TTS (approaching TTS-level speech intelligibility);
   competitive mixed-audio quality on MECAT; multilingual (9 languages)
@@ -43,3 +43,4 @@ military use. These restrictions apply to your use of the model outputs.
 768-dim latents). MiDashengLM-Gen is the generation model built on top of
 it - this repo wraps the generation model only. Do not confuse it with
 MiDashengLLM (speech LLM) or standalone Dasheng tokenizer releases.
+

@@ -25,6 +25,8 @@ dependencies = [
 # Heavy inference stack - installed by start.ps1 (uv sync --extra model).
 # Kept optional so CI/lint/test stay fast and the server can report a
 # declared model-missing state instead of failing to import.
+# NOTE: torch/torchaudio MUST come from the PyTorch CUDA index - the PyPI
+# default wheel is CPU-only (torch 2.13+). See [[tool.uv.index]] below.
 model = [
     "torch>=2.4",
     "torchaudio>=2.4",
@@ -41,6 +43,15 @@ dev = [
     "pytest>=8.3",
     "pytest-asyncio>=0.24",
 ]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu126" }
+torchaudio = { index = "pytorch-cu126" }
+
+[[tool.uv.index]]
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true
 
 [build-system]
 requires = ["hatchling"]

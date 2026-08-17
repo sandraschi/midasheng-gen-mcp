@@ -8,7 +8,7 @@ text-to-audio model per the paper. An LLM backbone (Qwen3-1.7B, fully
 fine-tuned) autoregressively drives per-token conditional flow matching
 (16-layer DiT) to generate variable-length 16 kHz mono audio scenes that
 blend speech, music, sound effects, and environmental acoustics from
-structured text captions. Total model size 2.9B params (~6 GB fp16 VRAM).
+structured text captions. Total model size 2.9B params (~12 GB fp32 VRAM).
 
 Key capabilities from the paper: speech intelligibility approaching
 dedicated TTS (Seed-TTS benchmark WER 12.15% -> 2.79% vs 1.24% for
@@ -112,3 +112,4 @@ with recovery options.
 - POST /mcp 500 -> FastMCP lifespan must be propagated (already fixed in
   this repo; see fastmcp 3.4-features.md)
 - Chat page offline -> start Ollama; check Settings provider probe
+

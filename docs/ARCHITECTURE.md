@@ -21,7 +21,7 @@ Claude Desktop (stdio)          Browser / Cursor (HTTP)
               |   ModelManager (lazy)      |
               |   torch + transformers     |
               |   MiDashengLM-Gen 2.9B     |
-              |   CUDA fp16 ~6 GB VRAM     |
+              |   CUDA fp16 ~12 GB VRAM (fp32)     |
               +----------------------------+
                            |
                            v
@@ -86,3 +86,4 @@ data/
 | `src/midasheng_gen_mcp/db.py` | SQLite scenes/jobs store |
 | `src/midasheng_gen_mcp/main.py` | Dual transport entry point |
 | `webapp/src/pages/Generate.tsx` | Caption builder + job polling |
+

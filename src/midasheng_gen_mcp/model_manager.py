@@ -137,7 +137,16 @@ class ModelManager:
                         self.model_id, trust_remote_code=True
                     )
                     device = settings.resolve_device()
-                    model = model.half().cuda() if device == "cuda" else model.float()
+                    dtype = settings.dtype
+                    if dtype == "fp16" and device == "cuda":
+                        # EXPERIMENTAL: fp16 hits Float/Half matmul errors in
+                        # this custom model (verified 2026-08-17); fp32 is the
+                        # working path. ~12 GB VRAM.
+                        model = model.half().cuda()
+                    else:
+                        model = model.float()
+                        if device == "cuda":
+                            model = model.cuda()
                     return model
 
                 self._model = await asyncio.to_thread(_load)
@@ -205,8 +214,17 @@ class ModelManager:
                 }
                 if seed is not None:
                     kwargs["seed"] = seed
-                with torch.no_grad():
-                    result = model.generate(prompt, **kwargs)
+                device = settings.resolve_device()
+                if device == "cuda" and settings.dtype == "fp16":
+                    # fp16 experimental: autocast resolves the Float/Half
+                    # matmul mismatch the reference impl avoids by running
+                    # under autocast.
+                    with torch.no_grad(), torch.autocast("cuda", dtype=torch.float16):
+                        result = model.generate(prompt, **kwargs)
+                else:
+                    # fp32 (default) on cuda or cpu: plain inference.
+                    with torch.no_grad():
+                        result = model.generate(prompt, **kwargs)
                 return result["audio"], int(result["sample_rate"])
 
             try:
