@@ -1,0 +1,45 @@
+# ---- MCPB exclusion (MCPB_PACKAGING_STANDARDS.md) ----
+
+# Logic/Dev Bloat
+.venv/
+node_modules/
+__pycache__/
+.ruff_cache/
+.pytest_cache/
+tests/
+
+# Discovery & Fleet Metadata
+glama.json
+llms.txt
+llms-full.txt
+.git/
+.github/
+.vscode/
+.cursorrules
+.claude-plugin/
+AGENTS.md
+CLAUDE.md
+INSTALL.md
+start.ps1
+start.bat
+justfile
+pyproject.toml
+uv.lock
+
+# Build Artifacts
+dist/
+build/
+*.mcpb
+webapp/
+src-tauri/
+native/
+target/
+data/
+scripts/
+docs/
+
+# Editor / tooling backups
+*.bak
+*.bak.*
+*.orig
+*.rej

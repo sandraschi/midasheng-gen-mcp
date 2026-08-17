@@ -1,0 +1,64 @@
+# ---- Fleet gitignore standard (GITIGNORE_STANDARDS.md) ----
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist-python/
+
+# Node / frontend
+node_modules/
+**/node_modules/
+webapp/dist/
+webapp/.vite/
+webapp/playwright-report/
+webapp/test-results/
+
+# Tauri / Rust (future native wrapper)
+target/
+**/target/
+src-tauri/target/
+src-tauri/binaries/
+native/target/
+gen/
+
+# MCPB staging - NEVER commit (fresh copy is made before each pack)
+mcpb/src/
+mcpb/pyproject.toml
+
+# Runtime data - model artifacts and DBs
+data/
+*.sqlite3
+*.db
+*.db-journal
+*.wav
+*.mp3
+*.flac
+
+# Secrets / local config
+.env
+!.env.example
+
+# Editor / tooling backups (timestamped sneak-in backups accumulate)
+*.bak
+*.bak.*
+*.orig
+*.rej
+
+# Fleet artifacts
+*.mcpb
+reports/
+cua-reports/
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
