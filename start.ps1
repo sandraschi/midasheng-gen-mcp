@@ -20,12 +20,28 @@ if (-not $Headless) {
     Write-Host ""
 }
 
+# ---- Refresh PATH from the registry ----
+# Bat-launched (double-click) sessions can miss recent installs (bun shims,
+# winget, uv). Without this, Require-Command cannot find the tools it must
+# install and the script terminates instantly.
+$env:PATH = [System.Environment]::GetEnvironmentVariable("PATH", "Machine") + ";" + [System.Environment]::GetEnvironmentVariable("PATH", "User")
+if (Test-Path "$env:USERPROFILE\.bun\bin") { $env:PATH = "$env:USERPROFILE\.bun\bin;$env:PATH" }
+if (Test-Path "$env:LOCALAPPDATA\Microsoft\WindowsApps") { $env:PATH = "$env:LOCALAPPDATA\Microsoft\WindowsApps;$env:PATH" }
+
 # ---- Require-Command: winget installs for naked PCs ----
 function Require-Command {
     param([string]$Name, [string]$WingetId, [string]$Hint)
     if (Get-Command $Name -ErrorAction SilentlyContinue) { return }
     Write-Host "  Installing $Name (required)..." -ForegroundColor Yellow
-    winget install --id $WingetId -e --accept-source-agreements --accept-package-agreements
+    $winget = Get-Command winget -ErrorAction SilentlyContinue
+    if (-not $winget) {
+        $wingetPath = Join-Path $env:LOCALAPPDATA "Microsoft\WindowsApps\winget.exe"
+        if (Test-Path $wingetPath) { $winget = $wingetPath }
+    }
+    if (-not $winget) {
+        throw "winget not found - cannot auto-install $Name. $Hint"
+    }
+    & $winget install --id $WingetId -e --accept-source-agreements --accept-package-agreements
     if ($LASTEXITCODE -ne 0) {
         throw "Could not install $Name automatically. $Hint"
     }

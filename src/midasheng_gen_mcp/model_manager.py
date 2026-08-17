@@ -240,6 +240,17 @@ class ModelManager:
         return self._status_locked()
 
     def _status_locked(self) -> dict[str, Any]:
+        # Infer the initial state at boot: once the stack + checkpoint are
+        # present, "not_installed" is stale and misleading.
+        if self.state == STATE_NOT_INSTALLED:
+            stack = self.check_stack()
+            if stack["torch_installed"] and stack["transformers_installed"]:
+                try:
+                    self.state = (
+                        STATE_UNLOADED if self._model_in_hf_cache() else STATE_MODEL_MISSING
+                    )
+                except Exception:
+                    self.state = STATE_MODEL_MISSING
         stack = self.check_stack()
         payload: dict[str, Any] = {
             "state": self.state,
