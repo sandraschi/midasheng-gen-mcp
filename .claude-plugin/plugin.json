@@ -1,0 +1,6 @@
+{
+  "name": "midasheng-gen-mcp",
+  "version": "0.1.0",
+  "description": "Unified audio scene generation MCP server",
+  "hooks": "../hooks/hooks.json"
+}

@@ -1,0 +1,37 @@
+{
+  "manifest_version": "0.2",
+  "name": "midasheng-gen-mcp",
+  "version": "0.1.0",
+  "description": "Unified audio scene generation via MiDashengLM-Gen - speech, music, SFX, and ambience in one 16 kHz mix from text (LLM-driven autoregressive flow matching).",
+  "author": { "name": "Sandra Schipal" },
+  "server": {
+    "type": "python",
+    "entry_point": "src/midasheng_gen_mcp/server.py",
+    "mcp_config": {
+      "command": "python",
+      "args": ["-m", "midasheng_gen_mcp"],
+      "env": {
+        "PYTHONPATH": "${PWD}",
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  },
+  "tools": [
+    {
+      "name": "audio_scene",
+      "description": "Portmanteau: status, generate, list, get, delete, export, samples, download_model, load_model, unload_model"
+    },
+    {
+      "name": "midasheng_help",
+      "description": "Multi-level help for the audio scene surface"
+    },
+    {
+      "name": "show_scene_status_card",
+      "description": "Model + library status as a Prefab card"
+    },
+    {
+      "name": "show_scene_card",
+      "description": "One generated scene as a Prefab card"
+    }
+  ]
+}

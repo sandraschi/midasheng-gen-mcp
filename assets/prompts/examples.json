@@ -1,0 +1,1320 @@
+[
+  {
+    "name": "generate-scene-0-tune-0",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "eval_cfg": 1.5
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-1",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "eval_cfg": 2.0
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-2",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "eval_cfg": 2.5
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-3",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "eval_cfg": 3.0
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-4",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['stop_threshold', 'min_stop_step']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "stop_threshold": 0.3,
+      "min_stop_step": 10
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-5",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "stop_threshold": 0.5
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-6",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "stop_threshold": 0.7
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-7",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['seed']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "seed": 7
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-8",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['seed']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "seed": 42
+    }
+  },
+  {
+    "name": "generate-scene-0-tune-9",
+    "description": "Generate 'A comedian delivering a punchline follow...' with tuning ['seed', 'eval_cfg']",
+    "prompt": "Generate a scene: A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A comedian delivering a punchline followed by uproarious crowd laughter and an upbeat jazz band hit",
+      "asr": "And that is why I never buy cheap luggage anymore!",
+      "speech": "expressive comedic male voice",
+      "music": "sudden upbeat jazz band sting",
+      "sfx": "uproarious crowd laughter",
+      "env": "intimate comedy club",
+      "seed": 99,
+      "eval_cfg": 1.8
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-0",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "eval_cfg": 1.5
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-1",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "eval_cfg": 2.0
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-2",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "eval_cfg": 2.5
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-3",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "eval_cfg": 3.0
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-4",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['stop_threshold', 'min_stop_step']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "stop_threshold": 0.3,
+      "min_stop_step": 10
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-5",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "stop_threshold": 0.5
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-6",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "stop_threshold": 0.7
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-7",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['seed']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "seed": 7
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-8",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['seed']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "seed": 42
+    }
+  },
+  {
+    "name": "generate-scene-1-tune-9",
+    "description": "Generate 'Rain pattering on windows with soft back...' with tuning ['seed', 'eval_cfg']",
+    "prompt": "Generate a scene: Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Rain pattering on windows with soft background chatter and a gentle acoustic guitar",
+      "music": "gentle acoustic guitar strumming",
+      "sfx": "steady rain against glass",
+      "env": "cozy cafe interior",
+      "seed": 99,
+      "eval_cfg": 1.8
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-0",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "eval_cfg": 1.5
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-1",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "eval_cfg": 2.0
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-2",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "eval_cfg": 2.5
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-3",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "eval_cfg": 3.0
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-4",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['stop_threshold', 'min_stop_step']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "stop_threshold": 0.3,
+      "min_stop_step": 10
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-5",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "stop_threshold": 0.5
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-6",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "stop_threshold": 0.7
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-7",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['seed']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "seed": 7
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-8",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['seed']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "seed": 42
+    }
+  },
+  {
+    "name": "generate-scene-2-tune-9",
+    "description": "Generate 'A rolling thunderstorm with distant rumb...' with tuning ['seed', 'eval_cfg']",
+    "prompt": "Generate a scene: A rolling thunderstorm with distant rumbles and heavy rain",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A rolling thunderstorm with distant rumbles and heavy rain",
+      "sfx": "distant thunder rumbles and heavy rain",
+      "env": "open field at night",
+      "seed": 99,
+      "eval_cfg": 1.8
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-0",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "eval_cfg": 1.5
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-1",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "eval_cfg": 2.0
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-2",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "eval_cfg": 2.5
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-3",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['eval_cfg']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "eval_cfg": 3.0
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-4",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['stop_threshold', 'min_stop_step']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "stop_threshold": 0.3,
+      "min_stop_step": 10
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-5",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "stop_threshold": 0.5
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-6",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['stop_threshold']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "stop_threshold": 0.7
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-7",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['seed']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "seed": 7
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-8",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['seed']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "seed": 42
+    }
+  },
+  {
+    "name": "generate-scene-3-tune-9",
+    "description": "Generate 'Smooth jazz quartet playing in a smoky l...' with tuning ['seed', 'eval_cfg']",
+    "prompt": "Generate a scene: Smooth jazz quartet playing in a smoky lounge with gentle applause",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Smooth jazz quartet playing in a smoky lounge with gentle applause",
+      "music": "smooth jazz quartet with saxophone, piano, and upright bass",
+      "sfx": "polite applause after the piece",
+      "env": "smoky lounge with low lights",
+      "seed": 99,
+      "eval_cfg": 1.8
+    }
+  },
+  {
+    "name": "generate-a-calm-news-anchor-reading-hea-0",
+    "description": "Generate: A calm news anchor reading headlines with subtle studio ambi",
+    "prompt": "Make an audio scene: A calm news anchor reading headlines with subtle studio ambience",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A calm news anchor reading headlines with subtle studio ambience",
+      "asr": "Breaking news: local markets rallied for a third consecutive day today.",
+      "speech": "calm professional female voice",
+      "music": "subtle news bed music",
+      "env": "quiet radio studio"
+    }
+  },
+  {
+    "name": "generate-a-peaceful-forest-at-dawn-with-1",
+    "description": "Generate: A peaceful forest at dawn with birdsong and a gentle breeze",
+    "prompt": "Make an audio scene: A peaceful forest at dawn with birdsong and a gentle breeze",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A peaceful forest at dawn with birdsong and a gentle breeze",
+      "sfx": "birdsong and rustling leaves",
+      "env": "dense forest at sunrise"
+    }
+  },
+  {
+    "name": "generate-a-door-slams,-footsteps-cross--2",
+    "description": "Generate: A door slams, footsteps cross a wooden hall, then a clock ch",
+    "prompt": "Make an audio scene: A door slams, footsteps cross a wooden hall, then a clock chimes midnight",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A door slams, footsteps cross a wooden hall, then a clock chimes midnight",
+      "sfx": "a heavy door slam, steady footsteps on wood, a clock chime",
+      "env": "an old empty house"
+    }
+  },
+  {
+    "name": "generate-a-short-exchange-at-a-market-s-3",
+    "description": "Generate: A short exchange at a market stall in the morning",
+    "prompt": "Make an audio scene: A short exchange at a market stall in the morning",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A short exchange at a market stall in the morning",
+      "asr": "How much for the apples? Three euros a kilo. I will take two.",
+      "speech": "cheerful market vendor voice, warm and quick",
+      "sfx": "crates being stacked, morning bustle",
+      "env": "open-air market, bright morning"
+    }
+  },
+  {
+    "name": "generate-a-soldier-reads-a-letter-home,-4",
+    "description": "Generate: A soldier reads a letter home, starting steady and ending mo",
+    "prompt": "Make an audio scene: A soldier reads a letter home, starting steady and ending moved",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A soldier reads a letter home, starting steady and ending moved",
+      "asr": "Dear Mom. The days are long but the nights are quiet. I met a dog yesterday. I miss you both.",
+      "speech": "young male voice, steady at first, breaking slightly",
+      "env": "quiet tent at night, distant rain"
+    }
+  },
+  {
+    "name": "generate-a-solo-piano-piece-that-builds-5",
+    "description": "Generate: A solo piano piece that builds from sparse to full, melancho",
+    "prompt": "Make an audio scene: A solo piano piece that builds from sparse to full, melancholic",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A solo piano piece that builds from sparse to full, melancholic",
+      "music": "solo piano, slow arpeggios growing louder and fuller",
+      "env": "small recital hall"
+    }
+  },
+  {
+    "name": "generate-slow-building-ambient-piece-wi-6",
+    "description": "Generate: Slow building ambient piece with a distant storm",
+    "prompt": "Make an audio scene: Slow building ambient piece with a distant storm",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Slow building ambient piece with a distant storm",
+      "music": "sparse ambient pads",
+      "env": "open plain under a gathering storm"
+    }
+  },
+  {
+    "name": "generate-a-goalkeeper-celebrates-after--7",
+    "description": "Generate: A goalkeeper celebrates after the final whistle",
+    "prompt": "Make an audio scene: A goalkeeper celebrates after the final whistle",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A goalkeeper celebrates after the final whistle",
+      "asr": "YES! We did it!",
+      "speech": "young excited male voice, triumphant and breathless",
+      "sfx": "roaring stadium crowd",
+      "env": "full stadium, loud"
+    }
+  },
+  {
+    "name": "generate-a-cheerful-host-greeting-liste-8",
+    "description": "Generate: A cheerful host greeting listeners over quiet music",
+    "prompt": "Make an audio scene: A cheerful host greeting listeners over quiet music",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A cheerful host greeting listeners over quiet music",
+      "asr": "Welcome back to the show, everybody!",
+      "speech": "warm energetic female voice",
+      "env": "small studio"
+    }
+  },
+  {
+    "name": "generate-a-quick-whoosh-and-a-soft-thum-9",
+    "description": "Generate: A quick whoosh and a soft thump",
+    "prompt": "Make an audio scene: A quick whoosh and a soft thump",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A quick whoosh and a soft thump",
+      "sfx": "a rising whoosh ending in a soft impact",
+      "env": "neutral room"
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-1",
+    "description": "Reproducible generation (seed 1) of Eine Nachrichtensprecherin liest die Sch",
+    "prompt": "Generate with a fixed seed 1: Eine Nachrichtensprecherin liest die Schlagzeilen",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Eine Nachrichtensprecherin liest die Schlagzeilen",
+      "asr": "Die B\u00f6rse schloss heute mit deutlichen Gewinnen.",
+      "speech": "ruhige professionelle Frauenstimme",
+      "env": "leises Radiostudio",
+      "seed": 1
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-2",
+    "description": "Reproducible generation (seed 2) of Eine Nachrichtensprecherin liest die Sch",
+    "prompt": "Generate with a fixed seed 2: Eine Nachrichtensprecherin liest die Schlagzeilen",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Eine Nachrichtensprecherin liest die Schlagzeilen",
+      "asr": "Die B\u00f6rse schloss heute mit deutlichen Gewinnen.",
+      "speech": "ruhige professionelle Frauenstimme",
+      "env": "leises Radiostudio",
+      "seed": 2
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-1",
+    "description": "Reproducible generation (seed 1) of Kitchen breakfast preparation sounds",
+    "prompt": "Generate with a fixed seed 1: Kitchen breakfast preparation sounds",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Kitchen breakfast preparation sounds",
+      "sfx": "sizzling pan, eggs cracking, kettle boiling",
+      "env": "small kitchen",
+      "seed": 1
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-2",
+    "description": "Reproducible generation (seed 2) of Kitchen breakfast preparation sounds",
+    "prompt": "Generate with a fixed seed 2: Kitchen breakfast preparation sounds",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Kitchen breakfast preparation sounds",
+      "sfx": "sizzling pan, eggs cracking, kettle boiling",
+      "env": "small kitchen",
+      "seed": 2
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-1",
+    "description": "Reproducible generation (seed 1) of A quiet library in the evening",
+    "prompt": "Generate with a fixed seed 1: A quiet library in the evening",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A quiet library in the evening",
+      "sfx": "page turns and a distant clock",
+      "env": "quiet library, wooden shelves",
+      "seed": 1
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-2",
+    "description": "Reproducible generation (seed 2) of A quiet library in the evening",
+    "prompt": "Generate with a fixed seed 2: A quiet library in the evening",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A quiet library in the evening",
+      "sfx": "page turns and a distant clock",
+      "env": "quiet library, wooden shelves",
+      "seed": 2
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-1",
+    "description": "Reproducible generation (seed 1) of Night city street with distant traffic a",
+    "prompt": "Generate with a fixed seed 1: Night city street with distant traffic and footsteps",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Night city street with distant traffic and footsteps",
+      "sfx": "footsteps on wet asphalt, distant cars",
+      "env": "city street at night, light drizzle",
+      "seed": 1
+    }
+  },
+  {
+    "name": "generate-repro-9-seed-2",
+    "description": "Reproducible generation (seed 2) of Night city street with distant traffic a",
+    "prompt": "Generate with a fixed seed 2: Night city street with distant traffic and footsteps",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Night city street with distant traffic and footsteps",
+      "sfx": "footsteps on wet asphalt, distant cars",
+      "env": "city street at night, light drizzle",
+      "seed": 2
+    }
+  },
+  {
+    "name": "generate-ambience-9",
+    "description": "Ambience-only generation: A spaceship cockpit with beeping instrum",
+    "prompt": "Generate ambience only: A spaceship cockpit with beeping instruments and low hum",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A spaceship cockpit with beeping instruments and low hum",
+      "sfx": "periodic console beeps, soft machinery hum",
+      "env": "small cockpit, metal walls"
+    }
+  },
+  {
+    "name": "generate-ambience-9",
+    "description": "Ambience-only generation: A beach at midday with waves and seagull",
+    "prompt": "Generate ambience only: A beach at midday with waves and seagulls",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "A beach at midday with waves and seagulls",
+      "sfx": "rolling waves, seagull calls",
+      "env": "wide sandy beach, bright sun"
+    }
+  },
+  {
+    "name": "generate-german-news",
+    "description": "German news read",
+    "prompt": "Generate a German news read",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Eine Nachrichtensprecherin liest die Schlagzeilen",
+      "asr": "Die B\u00f6rse schloss heute mit deutlichen Gewinnen.",
+      "speech": "ruhige professionelle Frauenstimme",
+      "env": "leises Radiostudio",
+      "seed": 3
+    }
+  },
+  {
+    "name": "generate-french-cafe",
+    "description": "French cafe ambience",
+    "prompt": "Generate a French cafe scene",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Un caf\u00e9 parisien anim\u00e9 le matin",
+      "sfx": "tasses qui cliquent, murmures",
+      "env": "caf\u00e9 parisien, matin ensoleill\u00e9",
+      "seed": 4
+    }
+  },
+  {
+    "name": "generate-spanish-market",
+    "description": "Spanish market ambience",
+    "prompt": "Generate a Spanish market scene",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "generate",
+      "caption": "Un mercado espa\u00f1ol lleno de vida",
+      "sfx": "vendedores llamando, fruta cayendo",
+      "env": "mercado al aire libre",
+      "seed": 5
+    }
+  },
+  {
+    "name": "status-check",
+    "description": "Check model status (check)",
+    "prompt": "Check the model status (check)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "status"
+    }
+  },
+  {
+    "name": "status-before-generating",
+    "description": "Check model status (before-generating)",
+    "prompt": "Check the model status (before-generating)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "status"
+    }
+  },
+  {
+    "name": "status-diagnose",
+    "description": "Check model status (diagnose)",
+    "prompt": "Check the model status (diagnose)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "status"
+    }
+  },
+  {
+    "name": "status-hardware",
+    "description": "Check model status (hardware)",
+    "prompt": "Check the model status (hardware)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "status"
+    }
+  },
+  {
+    "name": "status-after-error",
+    "description": "Check model status (after-error)",
+    "prompt": "Check the model status (after-error)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "status"
+    }
+  },
+  {
+    "name": "status-session-start",
+    "description": "Check model status (session-start)",
+    "prompt": "Check the model status (session-start)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "status"
+    }
+  },
+  {
+    "name": "samples-show",
+    "description": "Show built-in example captions (show)",
+    "prompt": "Show example captions (show)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "samples"
+    }
+  },
+  {
+    "name": "samples-pick-a-start",
+    "description": "Show built-in example captions (pick-a-start)",
+    "prompt": "Show example captions (pick-a-start)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "samples"
+    }
+  },
+  {
+    "name": "samples-gallery",
+    "description": "Show built-in example captions (gallery)",
+    "prompt": "Show example captions (gallery)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "samples"
+    }
+  },
+  {
+    "name": "list-page-0",
+    "description": "Browse scenes page 0 (limit 10, offset 0)",
+    "prompt": "List my scenes, page 0",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 10,
+      "offset": 0
+    }
+  },
+  {
+    "name": "list-page-1",
+    "description": "Browse scenes page 1 (limit 20, offset 0)",
+    "prompt": "List my scenes, page 1",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 20,
+      "offset": 0
+    }
+  },
+  {
+    "name": "list-page-2",
+    "description": "Browse scenes page 2 (limit 10, offset 10)",
+    "prompt": "List my scenes, page 2",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 10,
+      "offset": 10
+    }
+  },
+  {
+    "name": "list-page-3",
+    "description": "Browse scenes page 3 (limit 5, offset 0)",
+    "prompt": "List my scenes, page 3",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 5,
+      "offset": 0
+    }
+  },
+  {
+    "name": "list-page-4",
+    "description": "Browse scenes page 4 (limit 50, offset 0)",
+    "prompt": "List my scenes, page 4",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 50,
+      "offset": 0
+    }
+  },
+  {
+    "name": "list-page-5",
+    "description": "Browse scenes page 5 (limit 10, offset 20)",
+    "prompt": "List my scenes, page 5",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 10,
+      "offset": 20
+    }
+  },
+  {
+    "name": "list-page-6",
+    "description": "Browse scenes page 6 (limit 100, offset 0)",
+    "prompt": "List my scenes, page 6",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 100,
+      "offset": 0
+    }
+  },
+  {
+    "name": "list-page-7",
+    "description": "Browse scenes page 7 (limit 20, offset 40)",
+    "prompt": "List my scenes, page 7",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 20,
+      "offset": 40
+    }
+  },
+  {
+    "name": "list-page-8",
+    "description": "Browse scenes page 8 (limit 10, offset 30)",
+    "prompt": "List my scenes, page 8",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 10,
+      "offset": 30
+    }
+  },
+  {
+    "name": "list-page-9",
+    "description": "Browse scenes page 9 (limit 25, offset 50)",
+    "prompt": "List my scenes, page 9",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "list",
+      "limit": 25,
+      "offset": 50
+    }
+  },
+  {
+    "name": "get-latest",
+    "description": "Inspect the newest scene",
+    "prompt": "Show me the newest scene's details",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "get",
+      "scene_id": "scene_latest"
+    }
+  },
+  {
+    "name": "get-specific",
+    "description": "Inspect one scene by id",
+    "prompt": "Show scene scene_abc123",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "get",
+      "scene_id": "scene_abc123"
+    }
+  },
+  {
+    "name": "delete-confirm",
+    "description": "Delete a scene with confirmation",
+    "prompt": "Delete scene scene_abc123 (I confirm)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "delete",
+      "scene_id": "scene_abc123",
+      "confirm": true
+    }
+  },
+  {
+    "name": "delete-no-confirm",
+    "description": "Delete attempt without confirmation (should refuse)",
+    "prompt": "Delete scene scene_abc123",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "delete",
+      "scene_id": "scene_abc123"
+    }
+  },
+  {
+    "name": "delete-missing",
+    "description": "Delete a nonexistent scene",
+    "prompt": "Delete scene scene_does_not_exist (I confirm)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "delete",
+      "scene_id": "scene_does_not_exist",
+      "confirm": true
+    }
+  },
+  {
+    "name": "delete-cleanup",
+    "description": "Delete an unwanted scene after export",
+    "prompt": "Remove the exported scene scene_xyz (I confirm)",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "delete",
+      "scene_id": "scene_xyz",
+      "confirm": true
+    }
+  },
+  {
+    "name": "export-file",
+    "description": "Export a scene to a named WAV file",
+    "prompt": "Export scene scene_abc123 to D:/audio/intro.wav",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "export",
+      "scene_id": "scene_abc123",
+      "destination": "D:/audio/intro.wav"
+    }
+  },
+  {
+    "name": "export-dir",
+    "description": "Export a scene into a directory",
+    "prompt": "Export scene scene_abc123 into D:/podcast/",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "export",
+      "scene_id": "scene_abc123",
+      "destination": "D:/podcast/"
+    }
+  },
+  {
+    "name": "export-bed",
+    "description": "Export a music bed for editing",
+    "prompt": "Export the piano scene to my video project",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "export",
+      "scene_id": "scene_piano",
+      "destination": "D:/video-edits/bed-track.wav"
+    }
+  },
+  {
+    "name": "export-voice",
+    "description": "Export the voice hook",
+    "prompt": "Export the welcome hook to the podcast folder",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "export",
+      "scene_id": "scene_voice",
+      "destination": "D:/podcast/into-voice.wav"
+    }
+  },
+  {
+    "name": "export-missing",
+    "description": "Export attempt for unknown scene",
+    "prompt": "Export scene nope to D:/audio/out.wav",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "export",
+      "scene_id": "nope",
+      "destination": "D:/audio/out.wav"
+    }
+  },
+  {
+    "name": "download-model",
+    "description": "Download the checkpoint from Hugging Face",
+    "prompt": "Download the model checkpoint",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "download_model"
+    }
+  },
+  {
+    "name": "load-model",
+    "description": "Load the model onto the GPU",
+    "prompt": "Load the model into GPU memory",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "load_model"
+    }
+  },
+  {
+    "name": "unload-model",
+    "description": "Free GPU memory",
+    "prompt": "Unload the model to free VRAM",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "unload_model"
+    }
+  },
+  {
+    "name": "download-then-load",
+    "description": "Download then load",
+    "prompt": "Get the model ready to generate",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "download_model"
+    }
+  },
+  {
+    "name": "preload-for-session",
+    "description": "Preload for a long session",
+    "prompt": "Load the model before my session",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "load_model"
+    }
+  },
+  {
+    "name": "unload-before-other-work",
+    "description": "Unload before other GPU work",
+    "prompt": "Free VRAM for Ollama",
+    "tool": "audio_scene",
+    "arguments": {
+      "operation": "unload_model"
+    }
+  },
+  {
+    "name": "help-index",
+    "description": "Help index",
+    "prompt": "Show the help index",
+    "tool": "midasheng_help",
+    "arguments": {
+      "topic": null
+    }
+  },
+  {
+    "name": "help-generate",
+    "description": "Help on generate",
+    "prompt": "How do I generate a scene?",
+    "tool": "midasheng_help",
+    "arguments": {
+      "topic": "generate"
+    }
+  },
+  {
+    "name": "help-prompt-format",
+    "description": "Help on the caption format",
+    "prompt": "Explain the caption views",
+    "tool": "midasheng_help",
+    "arguments": {
+      "topic": "prompt_format"
+    }
+  },
+  {
+    "name": "help-model-state",
+    "description": "Help on model states",
+    "prompt": "What does model_missing mean?",
+    "tool": "midasheng_help",
+    "arguments": {
+      "topic": "model_state"
+    }
+  },
+  {
+    "name": "help-examples",
+    "description": "Help on examples",
+    "prompt": "Show me usage examples",
+    "tool": "midasheng_help",
+    "arguments": {
+      "topic": "examples"
+    }
+  },
+  {
+    "name": "status-card",
+    "description": "Model status as a card",
+    "prompt": "Show the status card",
+    "tool": "show_scene_status_card",
+    "arguments": {}
+  },
+  {
+    "name": "scene-card",
+    "description": "One scene as a card",
+    "prompt": "Show scene scene_abc123 as a card",
+    "tool": "show_scene_card",
+    "arguments": {
+      "scene_id": "scene_abc123"
+    }
+  },
+  {
+    "name": "scene-card-missing",
+    "description": "Missing scene card (error state)",
+    "prompt": "Show a card for an unknown scene",
+    "tool": "show_scene_card",
+    "arguments": {
+      "scene_id": "scene_unknown"
+    }
+  },
+  {
+    "name": "scene-card-duration",
+    "description": "Scene card with duration",
+    "prompt": "Card for the thunderstorm scene",
+    "tool": "show_scene_card",
+    "arguments": {
+      "scene_id": "scene_thunder"
+    }
+  }
+]

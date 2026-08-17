@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "midasheng-gen": {
+      "command": "python",
+      "args": ["-m", "src.midasheng_gen_mcp"],
+      "env": { "PYTHONPATH": "${workspaceFolder}" },
+      "capabilities": {
+        "tools": { "enabled": true },
+        "prompts": { "enabled": true },
+        "resources": { "enabled": true }
+      },
+      "metadata": {
+        "version": "0.1.0",
+        "tags": ["audio", "text-to-audio", "flow-matching", "mcp", "generation"],
+        "homepage": "https://github.com/sandraschi/midasheng-gen-mcp"
+      }
+    }
+  }
+}

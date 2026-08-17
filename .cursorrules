@@ -1,0 +1,13 @@
+## Session Context (MiDashengLM-Gen Audio)
+
+You have access to unified audio scene generation: speech, music, SFX, and
+ambience in one 16 kHz mix, generated locally by the MiDashengLM-Gen model.
+
+**Before starting work:**
+1. Check model state: `audio_scene(operation="status")`
+2. Browse the library: `audio_scene(operation="list", limit=5)`
+
+**At end of work:**
+- Use `audio_scene(operation="export", scene_id=..., destination=...)` when
+  the user needs a WAV outside the library
+- Offer `download_model` when status reports model_missing

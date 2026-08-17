@@ -1,0 +1,114 @@
+# midasheng-gen-mcp - full LLM documentation
+
+## What this server does
+
+MiDashengLM-Gen MCP wraps the MiDashengLM-Gen model (Xiaomi Research,
+arXiv 2608.11804, Apache-2.0): the first end-to-end trained general
+text-to-audio model per the paper. An LLM backbone (Qwen3-1.7B, fully
+fine-tuned) autoregressively drives per-token conditional flow matching
+(16-layer DiT) to generate variable-length 16 kHz mono audio scenes that
+blend speech, music, sound effects, and environmental acoustics from
+structured text captions. Total model size 2.9B params (~6 GB fp16 VRAM).
+
+Key capabilities from the paper: speech intelligibility approaching
+dedicated TTS (Seed-TTS benchmark WER 12.15% -> 2.79% vs 1.24% for
+dedicated TTS), competitive mixed-audio quality on MECAT, multilingual
+support (9 languages), emotion control via the speech view.
+
+The server is FastMCP 3.4.4 with dual transport: stdio for Claude Desktop,
+streamable HTTP (/mcp) for Cursor and the webapp. REST surface for the
+React dashboard. Everything runs locally on the user's GPU; the checkpoint
+downloads from Hugging Face on first use.
+
+## Architecture
+
+- `src/midasheng_gen_mcp/` - Python package (FastMCP + FastAPI)
+- `webapp/` - React 18 + Vite + Tailwind + Zustand dashboard
+- `data/` - SQLite index (scenes, jobs) + generated WAV files (gitignored)
+- Ports: backend 11159 (REST /api + MCP /mcp), frontend 11160
+
+Data flow:
+1. Caption views composed into a tagged prompt
+   (<|caption|> <|asr|> <|speech|> <|sfx|> <|music|> <|env|>)
+2. ModelManager lazily loads the checkpoint (idempotent) onto CUDA fp16
+3. model.generate() runs 10-step Euler ODE flow matching with CFG 2.0
+4. Audio saved as WAV; scene row + job row persisted to SQLite
+5. Webapp polls the job, serves the audio via /api/audio/{id}
+
+## Tool reference
+
+### audio_scene (portmanteau)
+
+Operations:
+- status: model state machine (not_installed / model_missing / unloaded /
+  loading / ready / error), device, CUDA, torch/transformers versions
+- generate: synchronous generation. Params: caption (required), asr,
+  speech, sfx, music, env, eval_cfg (2.0), stop_threshold (0.5),
+  min_stop_step (5), seed. Returns scene dict with audio_url.
+- list: paginated (limit 1-100, offset, has_more)
+- get: single scene by id
+- delete: requires confirm=True (removes WAV)
+- export: copy scene WAV to a destination path
+- samples: built-in example captions (comedy club, rainy cafe,
+  thunderstorm, jazz lounge, news report, forest dawn)
+- download_model: fetch checkpoint from Hugging Face (idempotent)
+- load_model / unload_model: GPU memory management
+
+### midasheng_help
+
+Topics: overview, generate, prompt_format, model_state, examples.
+
+### Prefab cards
+
+- show_scene_status_card: model + library status
+- show_scene_card: one scene's metadata
+
+## Environment variables
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| MIDASHENG_BACKEND_PORT | 11159 | Backend port |
+| MIDASHENG_FRONTEND_PORT | 11160 | Frontend port |
+| MIDASHENG_HF_MODEL_ID | mispeech/midashenglm-gen | Model repo |
+| MIDASHENG_DEVICE | auto | auto/cuda/cpu |
+| MIDASHENG_PRELOAD_MODEL | 0 | Load at startup |
+| MIDASHENG_DEFAULT_CFG | 2.0 | Default guidance |
+| MIDASHENG_DEFAULT_STOP_THRESHOLD | 0.5 | Default stop |
+| MIDASHENG_DEFAULT_SEED | (none) | Default seed |
+| MIDASHENG_DATA_DIR | ./data | Data directory |
+| MIDASHENG_OLLAMA_URL | http://127.0.0.1:11434 | Chat proxy target |
+| MIDASHENG_OLLAMA_MODEL | (auto) | Chat model |
+
+## REST API
+
+- GET /api/health, /api/v1/diagnostics
+- GET /api/dashboard, /api/capabilities
+- GET /api/tools, /api/skills, /api/skills/{name}, /api/samples
+- GET /api/scenes (limit/offset), GET/DELETE /api/scenes/{id}
+- POST /api/generate (job), GET /api/jobs, GET /api/jobs/{id}
+- GET /api/audio/{scene_id} (WAV)
+- POST /api/model/download | /load | /unload
+- GET /api/logs, GET /api/llm/discover, POST /api/llm/chat
+- MCP streamable HTTP: /mcp (FastMCP 3.4.4, lifespan propagated)
+
+## Model state machine
+
+- not_installed: run `uv sync --extra model` (torch + transformers)
+- model_missing: checkpoint not downloaded; download_model or start.ps1
+- unloaded: checkpoint present, not in GPU memory
+- loading: load in progress (idempotent)
+- ready: ready to generate
+- error: load failed; check error_message, retry load_model
+
+Tools never fake success: missing stack/checkpoint returns success=False
+with recovery options.
+
+## Troubleshooting
+
+- not_installed -> uv sync --extra model
+- model_missing -> download_model / just model-download / Settings button
+- CUDA out of memory -> unload other models; 6 GB fp16 required
+- Slow generation -> CPU inference is 10-50x slower than CUDA
+- POST /mcp 500 -> FastMCP lifespan must be propagated (already fixed in
+  this repo; see fastmcp 3.4-features.md)
+- Chat page offline -> start Ollama; check Settings provider probe

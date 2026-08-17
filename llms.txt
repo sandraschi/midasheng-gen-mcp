@@ -1,0 +1,23 @@
+# midasheng-gen-mcp
+
+Generate coherent 16 kHz mixed audio scenes - speech, music, sound effects,
+and ambience in one pass - from structured text captions, powered by
+MiDashengLM-Gen (Xiaomi Research, LLM-driven autoregressive flow matching).
+Runs locally on CUDA. Apache-2.0.
+
+## Key links
+
+- [README](https://github.com/sandraschi/midasheng-gen-mcp)
+- [INSTALL](https://github.com/sandraschi/midasheng-gen-mcp/blob/main/INSTALL.md)
+- [llms-full.txt](llms-full.txt) - full LLM documentation
+- [arXiv 2608.11804](https://arxiv.org/abs/2608.11804)
+- [Hugging Face model](https://huggingface.co/mispeech/midashenglm-gen)
+- [Demo page](https://xingws.github.io/midashenglm-gen-demo/)
+
+## Summary
+
+- MCP tool: `audio_scene` portmanteau (status, generate, list, get, delete,
+  export, samples, model lifecycle) + `midasheng_help` + Prefab cards
+- Structured caption views: caption, asr, speech, sfx, music, env
+- Backend 11159 (REST + MCP /mcp), webapp 11160
+- 9 languages, emotion control, variable-length output via learned stop head
