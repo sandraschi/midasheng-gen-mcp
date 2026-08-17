@@ -23,7 +23,12 @@ test.describe("Fleet Audit - midasheng-gen-mcp", () => {
       if (msg.type() === "error") errors.push(msg.text());
     });
     await page.goto(FE, { timeout: 20000 });
-    await page.waitForTimeout(2500);
+    // Settle: wait for the backend dot to reach Connected (health poll done)
+    await expect(page.locator('[data-testid="backend-dot"]')).toContainText(
+      /Connected|Offline/,
+      { timeout: 15000 },
+    );
+    await page.waitForTimeout(2000);
     await expect(page.locator("#root")).toBeAttached();
     expect(errors).toEqual([]);
   });
@@ -37,23 +42,21 @@ test.describe("Fleet Audit - midasheng-gen-mcp", () => {
 
   test("Sidebar navigation walks all routes", async ({ page }) => {
     await page.goto(FE, { timeout: 20000 });
-    const routes = [
-      "generate",
-      "scenes",
-      "inbox",
-      "tools",
-      "skills",
-      "chat",
-      "settings",
-      "help",
-      "logs",
-      "api-docs",
-    ];
-    for (const route of routes) {
+    const routes: Record<string, string> = {
+      "generate": "generate-page",
+      "scenes": "scenes-page",
+      "inbox": "inbox-page",
+      "tools": "tools-page",
+      "skills": "skills-page",
+      "chat": "chat-page",
+      "settings": "settings-page",
+      "help": "help-page",
+      "logs": "logs-page",
+      "api-docs": "api-docs-page",
+    };
+    for (const [route, testid] of Object.entries(routes)) {
       await page.click(`[data-testid="nav-${route}"]`);
-      await page.waitForTimeout(800);
-      const title = await page.locator('[data-testid="page-title"]').textContent();
-      expect(title?.toLowerCase()).toContain(route.replace("-", " "));
+      await expect(page.locator(`[data-testid="${testid}"]`)).toBeVisible();
     }
   });
 

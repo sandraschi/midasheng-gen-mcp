@@ -107,7 +107,7 @@ export default function Layout() {
               key={to}
               to={to}
               aria-label={label}
-              data-testid={`nav-${label.toLowerCase()}`}
+              data-testid={`nav-${to === "/" ? "dashboard" : to.slice(1)}`}
               className={({ isActive }) =>
                 `flex items-center gap-2 rounded-md px-2 py-1.5 text-sm transition-colors ${
                   isActive
