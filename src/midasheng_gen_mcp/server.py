@@ -49,6 +49,17 @@ async def lifespan(server: FastMCP) -> dict[str, Any]:
     return {"settings": settings}
 
 
+@mcp.resource("skill://midasheng-gen/SKILL.md")
+def midasheng_gen_skill() -> str:
+    """The bundled skill: how to drive audio scene generation."""
+    import importlib.resources  # noqa: PLC0415
+
+    resource = importlib.resources.files("midasheng_gen_mcp.skills").joinpath(
+        "midasheng-gen", "SKILL.md"
+    )
+    return resource.read_text(encoding="utf-8")
+
+
 def create_mcp() -> FastMCP:
     """Return the shared FastMCP instance, ensuring tools are registered.
 
