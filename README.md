@@ -1,10 +1,38 @@
-# midasheng-gen-mcp
+<p align="center">
+  <img src="assets/icon.png" alt="MiDashengLM-Gen" width="128" />
+</p>
 
-Generate coherent 16 kHz **mixed audio scenes** from text - speech, music,
-sound effects, and ambience in one pass - powered by
-[MiDashengLM-Gen](https://arxiv.org/abs/2608.11804) (Xiaomi Research), an
-LLM-driven autoregressive flow matching model (Qwen3-1.7B backbone, 2.9B
-params total). Apache-2.0, runs entirely on your GPU.
+<h1 align="center">midasheng-gen-mcp</h1>
+
+<p align="center"><b>Type a scene. Get the whole soundscape.</b><br />
+An MCP server and dark-theme webapp that generate coherent 16 kHz mixed audio
+scenes - speech, music, sound effects and ambience - in one pass from text,
+powered by <a href="https://arxiv.org/abs/2608.11804">MiDashengLM-Gen</a>
+(Xiaomi Research). Runs entirely on your GPU.</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License: Apache-2.0" /></a>
+  <a href="#requirements"><img src="https://img.shields.io/badge/python-3.12%2B-3776AB.svg" alt="Python 3.12+" /></a>
+  <a href="docs/ARCHITECTURE.md"><img src="https://img.shields.io/badge/FastMCP-3.4.4-brightgreen.svg" alt="FastMCP 3.4.4" /></a>
+  <a href="docs/CONFIGURATION.md"><img src="https://img.shields.io/badge/inference-local%20CUDA-important.svg" alt="Local CUDA inference" /></a>
+  <a href="docs/WRAPPEE.md"><img src="https://img.shields.io/badge/languages-9-blue.svg" alt="9 languages" /></a>
+  <a href="INSTALL.md"><img src="https://img.shields.io/badge/works%20with-Claude%20Desktop%20%C2%B7%20Cursor%20%C2%B7%20opencode-lightgrey.svg" alt="MCP hosts" /></a>
+  <a href="docs/ARCHITECTURE.md"><img src="https://img.shields.io/badge/webapp-React%20%2B%20Vite%20(dark)-informational.svg" alt="Webapp" /></a>
+</p>
+
+<p align="center">
+  <a href="#quick-install"><b>Quick install</b></a> ·
+  <a href="#example-prompts">Example prompts</a> ·
+  <a href="#documentation">Documentation</a>
+</p>
+
+---
+
+One call in Claude, Cursor or opencode - "a comedy club scene with a
+punchline, crowd laughter and a jazz sting" - and you get a single 16 kHz WAV
+with all of it. Speech lands close to dedicated TTS quality in 9 languages
+with emotion control, and the whole ~6 GB model stays on your GPU until you
+unload it.
 
 ## What this wraps
 
@@ -16,7 +44,7 @@ Supports **9 languages** and emotion control. Checkpoint auto-downloads
 from [Hugging Face](https://huggingface.co/mispeech/midashenglm-gen)
 (~6 GB). Model weights are never bundled - see [docs/WRAPPEE.md](docs/WRAPPEE.md).
 
-## What You Can Do
+## Features
 
 **How it runs**: a local FastMCP 3.4 server (stdio for Claude Desktop, HTTP
 `/mcp` for Cursor/webapp) with a React dashboard. The model loads lazily on
