@@ -8,6 +8,7 @@ generation parameters grouped in a single schema.
 
 from __future__ import annotations
 
+import asyncio
 import shutil
 from typing import Annotated, Any, Literal
 
@@ -229,7 +230,7 @@ async def audio_scene(
                 return _error_response(f"Scene {scene_id} not found", "not_found")
             deleted = _store().delete_scene(scene_id)
             try:
-                shutil.rmtree(str(scene["file_path"]), ignore_errors=True)
+                await asyncio.to_thread(shutil.rmtree, str(scene["file_path"]), ignore_errors=True)
             except OSError:
                 pass
             return ok_response(
