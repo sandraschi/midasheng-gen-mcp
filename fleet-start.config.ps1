@@ -1,4 +1,4 @@
-﻿# Per-repo fleet start config for midasheng-gen-mcp
+# Per-repo fleet start config for midasheng-gen-mcp
 # Edit ports/backend target here - start.ps1 is fleet-standard.
 @{
     Name         = 'midasheng-gen-mcp'
@@ -11,6 +11,7 @@
         Module     = 'midasheng_gen_mcp'
         ServeArgs  = @('--mode', 'http', '--port', '11159')
         SyncExtras = @('dev')
+        SyncOnStart  = $true
     }
     Frontend = @{
         Kind           = 'vite-npm'

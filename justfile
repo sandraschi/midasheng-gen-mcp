@@ -30,7 +30,7 @@ e2e:
 
 # Bundle for Claude Desktop (MCPB) - wipes and recopies src first
 mcpb-pack:
-    powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/mcpb-pack.ps1
+    powershell.exe -NoProfile -ExecutionPolicy Bypass -File "D:\Dev\repos\mcp-central-docs\scripts\make-mcpb.ps1" -RepoPath "{{REPO}}"
 
 # Download the model checkpoint (idempotent)
 model-download:

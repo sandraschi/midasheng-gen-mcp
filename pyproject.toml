@@ -57,6 +57,13 @@ explicit = true
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[dependency-groups]
+dev = [
+    "pillow>=12.3.0",
+    "pytesseract>=0.3.13",
+    "pywinauto>=0.6.9",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/midasheng_gen_mcp"]
 
